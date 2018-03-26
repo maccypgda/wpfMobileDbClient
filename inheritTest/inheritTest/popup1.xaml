@@ -1,0 +1,28 @@
+﻿<Window x:Class="inheritTest.popup1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:inheritTest"
+        mc:Ignorable="d"
+        Title="Add new mobile..." Height="300" Width="300">
+    <Grid>
+        <TextBox x:Name="producentNameTextBox" HorizontalAlignment="Left" Height="23" Margin="109,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="109"/>
+        <TextBox x:Name="modelNameTextBox" HorizontalAlignment="Left" Height="23" Margin="109,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="109"/>
+        <TextBox x:Name="imeiTextBox" HorizontalAlignment="Left" Height="23" Margin="109,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="109"/>
+        <TextBox x:Name="DamageTypeTextBox" HorizontalAlignment="Left" Height="23" Margin="109,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="109"/>
+        <TextBox x:Name="ownerTextBox" HorizontalAlignment="Left" Height="23" Margin="109,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="109"/>
+        <TextBox x:Name="invoiceNumberTextBox" HorizontalAlignment="Left" Height="23" Margin="109,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="109"/>
+
+        <Button x:Name="addMobileButton" Content="Add" HorizontalAlignment="Left" Height="37" Margin="61,222,0,0" VerticalAlignment="Top" Width="157" Click="addMobileButton_Click"/>
+        
+        <Label x:Name="label" Content="Producer" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label x:Name="labe2" Content="Model" HorizontalAlignment="Left" Height="23" Margin="10,38,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label x:Name="labe3" Content="IMEI" HorizontalAlignment="Left" Height="23" Margin="10,66,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label x:Name="labe4" Content="Damage type" HorizontalAlignment="Left" Height="28" Margin="10,94,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label x:Name="labe5" Content="Owner" HorizontalAlignment="Left" Height="23" Margin="10,127,0,0" VerticalAlignment="Top" Width="64"/>
+        <Label x:Name="labe6" Content="Invoice nr" HorizontalAlignment="Left" Height="23" Margin="10,155,0,0" VerticalAlignment="Top" Width="64"/>
+        
+
+    </Grid>
+</Window>

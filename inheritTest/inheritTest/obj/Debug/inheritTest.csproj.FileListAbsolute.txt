@@ -1,0 +1,16 @@
+c:\users\macpc\documents\visual studio 2015\Projects\inheritTest\inheritTest\bin\Debug\inheritTest.exe.config
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\MainWindow.g.cs
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\popup1.g.cs
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\App.g.cs
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\inheritTest_MarkupCompile.cache
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\inheritTest_MarkupCompile.lref
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\bin\Debug\inheritTest.exe
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\bin\Debug\inheritTest.pdb
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\MainWindow.baml
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\popup1.baml
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\inheritTest.g.resources
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\inheritTest.Properties.Resources.resources
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\inheritTest.csproj.GenerateResource.Cache
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\inheritTest.exe
+C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\inheritTest.pdb
+C:\Users\MacPC\documents\visual studio 2015\Projects\inheritTest\inheritTest\obj\Debug\inheritTest.csprojResolveAssemblyReference.cache
