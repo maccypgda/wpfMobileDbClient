@@ -10,45 +10,45 @@ namespace inheritTest
     {
 
         private string mobId;
-        public string MobId
+        public string ID
         {
             get { return mobId; }
             set { mobId = value; }
         }
         private string mobProd;
-        public string MobProd
+        public string Producer
         {
             get { return mobProd; }
             set { mobProd = value; }
         }
         private string mobMod;
-        public string MobMod
+        public string Model
         {
             get { return mobMod; }
             set { mobMod = value; }
         }
         private string mobImei;
-        public string MobImei
+        public string IMEI
         {
             get { return mobImei; }
             set { mobImei = value; }
         }
         private string mobComments;
-        public string MobComments
+        public string Comments
         {
             get { return mobComments; }
             set { mobComments = value; }
         }
 
         private string mobOwner;
-        public string MobOwner
+        public string Owner
         {
             get { return mobOwner; }
             set { mobOwner = value; }
         }
 
         private string mobInvoice;
-        public string MobInvoice
+        public string InvoiceNr
         {
             get { return mobInvoice; }
             set { mobInvoice = value; }

@@ -26,7 +26,7 @@ namespace inheritTest
         //string firstString = "";
         List<string> dataFromPopup = new List<string>();
         List<Reader> dataFromDB = new List<Reader>();
-
+        List<string> newList = new List<string>();
         string sqlQuery;
 
         public MainWindow()
@@ -49,13 +49,11 @@ namespace inheritTest
             SqlDataReader reader = SQLcommand.ExecuteReader();
             reader.Close();
         }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void newMobile_Click(object sender, RoutedEventArgs e)
         {
             popup1 newWindow = new popup1();
             newWindow.passDatafromPopu1toMain += new EventHandler<CustomEventArgs>(newWindow_RaiseCustomEvent);
             newWindow.Show();
-
         }
         //working
         void newWindow_RaiseCustomEvent(object sender, CustomEventArgs e)
@@ -68,7 +66,6 @@ namespace inheritTest
             e.Message[0] + "', '" + e.Message[1] + "', '" + e.Message[2] + "', '" + e.Message[3] + "', '" + e.Message[4] + "', '" + e.Message[5] + "')";
             firstDataTextBox.Text = sqlQuery;
             saveDataToDataBase(sqlQuery);
-
         }
 
         private void readDB_Click(object sender, RoutedEventArgs e)
@@ -93,37 +90,37 @@ namespace inheritTest
                 //    reader["mobComments"].ToString() +
                 //    reader["mobOwner"].ToString() +
                 //    reader["mobInvoice"].ToString();
-                //dataFromDB.Add(reader["mobId"].ToString());
-                //dataFromDB.Add(reader["mobProd"].ToString());
-                //dataFromDB.Add(reader["mobMod"].ToString());
-                //dataFromDB.Add(reader["mobImei"].ToString());
-                //dataFromDB.Add(reader["mobComments"].ToString());
-                //dataFromDB.Add(reader["mobOwner"].ToString());
-                //dataFromDB.Add(reader["mobInvoice"].ToString());
+                newList.Add(reader["mobId"].ToString());
+                newList.Add(reader["mobProd"].ToString());
+                newList.Add(reader["mobMod"].ToString());
+                newList.Add(reader["mobImei"].ToString());
+                newList.Add(reader["mobComments"].ToString());
+                newList.Add(reader["mobOwner"].ToString());
+                newList.Add(reader["mobInvoice"].ToString());
                 //dataGrid.DataContext = dataFromDB;
                 //firstDataTextBox.Text = dataGrid.DataContext.ToString();
 
-
                 var readTable = new Reader();
-                readTable.MobId = reader["mobId"].ToString();
-                readTable.MobProd = reader["mobProd"].ToString();
-                readTable.MobMod = reader["mobMod"].ToString();
-                readTable.MobImei = reader["mobImei"].ToString();
-                readTable.MobComments = reader["mobComments"].ToString();
-                readTable.MobOwner = reader["mobOwner"].ToString();
-                readTable.MobInvoice = reader["mobInvoice"].ToString();
+                readTable.ID = reader["mobId"].ToString();
+                readTable.Producer = reader["mobProd"].ToString();
+                readTable.Model = reader["mobMod"].ToString();
+                readTable.IMEI = reader["mobImei"].ToString();
+                readTable.Comments = reader["mobComments"].ToString();
+                readTable.Owner = reader["mobOwner"].ToString();
+                readTable.InvoiceNr = reader["mobInvoice"].ToString();
                 dataFromDB.Add(readTable);
-
+                newList.Add(reader["mobInvoice"].ToString());
 
                 //dataGrid.DataSource = dataFromDB;
-
-
-
             }
-            //dataGrid.ItemsSource
+            //firstDataTextBox.Text = newList.ForEach();
+            firstDataTextBox.Text = dataFromDB[1].ID;
+            this.dataGrid.ItemsSource = dataFromDB;
             reader.Close();
         }
 
+
+        //?????????????????????????????????????????????????????????????
         private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var grid = sender as DataGrid;
