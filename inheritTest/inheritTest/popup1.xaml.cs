@@ -22,7 +22,6 @@ namespace inheritTest
         public event EventHandler<CustomEventArgs> passDatafromPopu1toMain;
         List<string> dataFromPopup = new List<string>();
 
-
         public popup1()
         {
             InitializeComponent();
@@ -40,12 +39,18 @@ namespace inheritTest
         }
         private void addMobileButton_Click(object sender, RoutedEventArgs e)
         {
-            myText();
-            passDatafromPopu1toMain(this, new CustomEventArgs(dataFromPopup));
-            this.Close();
+            if (producentNameTextBox.Text == "")
+            {
+                addMobileErrorWindow errorWindow = new addMobileErrorWindow();
+                errorWindow.ShowDialog();
+            }
+            else
+            {
+                myText();
+                passDatafromPopu1toMain(this, new CustomEventArgs(dataFromPopup));
+                this.Close();
+            }
         }
-
-
     }
     public class CustomEventArgs : EventArgs
     {

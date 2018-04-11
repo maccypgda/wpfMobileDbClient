@@ -13,4 +13,5 @@ C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj
 C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\inheritTest.csproj.GenerateResource.Cache
 C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\inheritTest.exe
 C:\Users\MacPC\Documents\Visual Studio 2015\Projects\inheritTest\inheritTest\obj\Debug\inheritTest.pdb
-C:\Users\MacPC\documents\visual studio 2015\Projects\inheritTest\inheritTest\obj\Debug\inheritTest.csprojResolveAssemblyReference.cache
+C:\Users\MacPC\documents\visual studio 2015\Projects\inheritTest\inheritTest\obj\Debug\addMobileErrorWindow.g.cs
+C:\Users\MacPC\documents\visual studio 2015\Projects\inheritTest\inheritTest\obj\Debug\addMobileErrorWindow.baml

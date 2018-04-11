@@ -12,7 +12,7 @@
         <Button x:Name="newMobile" Content="Add new mobile" HorizontalAlignment="Left" Height="63" Margin="10,10,0,0" VerticalAlignment="Top" Width="129" Click="newMobile_Click"/>
         <TextBox x:Name="firstDataTextBox" HorizontalAlignment="Left" Height="36" Margin="0,78,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="507" />
         <Button x:Name="readDBbutton" Content="Read from DB" HorizontalAlignment="Left" Height="63" Margin="178,10,0,0" VerticalAlignment="Top" Width="129" Click="readDB_Click"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="179" Margin="24,119,0,0" VerticalAlignment="Top" Width="493" SelectionChanged="dataGrid_SelectionChanged">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="179" Margin="24,119,0,0" VerticalAlignment="Top" Width="493" >
             
             <DataGrid.Columns>
                 <!--<DataGridTextColumn x:Name="ID" Header ="ID" IsReadOnly="True"  Binding="{Binding mobUid}"/>
@@ -24,6 +24,7 @@
                 <DataGridTextColumn x:Name="InvoiceNr" IsReadOnly="True"  Binding="{Binding mobInvoice}"  />-->
             </DataGrid.Columns>
         </DataGrid>
+        <Button x:Name="clearGridButton" Content="Clear_tempButton" HorizontalAlignment="Left" Height="63" Margin="353,10,0,0" VerticalAlignment="Top" Width="129" Click="clearGrid_Click"/>
 
     </Grid>
 </Window>

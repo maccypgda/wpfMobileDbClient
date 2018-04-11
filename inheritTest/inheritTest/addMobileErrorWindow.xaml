@@ -1,0 +1,14 @@
+﻿<Window x:Class="inheritTest.addMobileErrorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:inheritTest"
+        mc:Ignorable="d"
+        Title="Błąd podczas dodawania telefonu!" Height="141.379" Width="270.115">
+    <Grid Margin="0,0,13,12">
+        <Button x:Name="button" Content="OK" HorizontalAlignment="Left" Height="58" Margin="57,36,0,0" VerticalAlignment="Top" Width="154" Click="button_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="21" Margin="69,10,0,0" TextWrapping="Wrap" Text="Wypełnij wszystkie pola!" VerticalAlignment="Top" Width="132"/>
+
+    </Grid>
+</Window>
